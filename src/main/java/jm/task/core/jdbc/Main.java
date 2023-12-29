@@ -11,20 +11,28 @@ public class Main {
       UserServiceImpl userService = new UserServiceImpl();
 
 
+
      /*   Configuration configuration =new Configuration();
 
         configuration.configure();
         SessionFactory sessionFactory = configuration.buildSessionFactory();
         Session session = sessionFactory.openSession();*/
 
-        userService.createUsersTable();
+        //userService.dropUsersTable();
+        //userService.dropUsersTable();
+        //userService.dropUsersTable();
+        //userService.createUsersTable();
         userService.saveUser("Anton", "Ivanov", (byte)12);
-        userService.saveUser("Pete", "Vasilev", (byte)23);
-        userService.saveUser("Sergey", "Ponev", (byte)32);
-        userService.saveUser("Vanya", "Skorov", (byte)26);
-        System.out.println(userService.getAllUsers());
+        //userService.saveUser("Pete", "Vasilev", (byte)23);
+        //userService.saveUser("Sergey", "Ponev", (byte)32);
+        //userService.saveUser("Vanya", "Skorov", (byte)26);
+        //userService.removeUserById(1);
+        //userService.getAllUsers();
+        //userService.cleanUsersTable();
+        /*System.out.println(userService.getAllUsers());
         userService.cleanUsersTable();
-        userService.dropUsersTable();
+        userService.dropUsersTable();*/
+       // userService.dropUsersTable();
 
     }
 }
